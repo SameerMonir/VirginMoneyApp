@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Virgin Money</string>
+    <string name="title_home">Colleagues</string>
+    <string name="title_room">Rooms</string>
+    <string name="title_details">Details</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

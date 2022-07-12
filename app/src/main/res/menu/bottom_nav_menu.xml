@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_colleagues"
+        android:icon="@drawable/people_detail"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_rooms"
+        android:icon="@drawable/meeting_room"
+        android:title="@string/title_room" />
+
+</menu>

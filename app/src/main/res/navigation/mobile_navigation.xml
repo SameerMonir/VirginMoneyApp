@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_colleagues">
+
+    <fragment
+        android:id="@+id/navigation_colleagues"
+        android:name="com.example.virginmoneyapp.Ui.Fragments.ColleaguesFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_colleagues" >
+        <action
+            android:id="@+id/action_navigation_colleagues_to_colleagueDetailsFragment"
+            app:popUpToInclusive="true"
+            app:destination="@id/colleagueDetailsFragment" />
+        <argument
+            android:name="deails"
+            app:argType="com.example.virginmoneyapp.model.people.PeopleItem[]" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_rooms"
+        android:name="com.example.virginmoneyapp.Ui.Fragments.RoomFragment"
+        android:label="@string/title_room"
+        tools:layout="@layout/fragment_room" />
+    <fragment
+        android:id="@+id/colleagueDetailsFragment"
+        android:name="com.example.virginmoneyapp.Ui.Fragments.ColleaguesDetailsFragment"
+        android:label="Colleague details"
+        tools:layout="@layout/fragment_colleague_details" >
+        <action
+            android:id="@+id/action_colleagueDetailsFragment_to_navigation_colleagues"
+            app:popUpToInclusive="true"
+            app:destination="@id/navigation_colleagues" />
+    </fragment>
+
+</navigation>
